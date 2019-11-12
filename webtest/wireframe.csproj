@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25362980-BE26-496B-8EF1-438046BAE6F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>webtest</RootNamespace>
+    <AssemblyName>webtest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\lenovo\Desktop\webcam\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\lenovo\Desktop\webcam\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\lenovo\Desktop\webcam\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Fizzler, Version=1.1.21209.0, Culture=neutral, PublicKeyToken=4ebff4844e382110, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fizzler.1.1.0\lib\net35\Fizzler.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x64\Interop.IWshRuntimeLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Basic">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.Imaging.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Basic.Codec">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.Imaging.Basic.Codec.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Drawing">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.Imaging.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Font">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.Imaging.Font.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.Processing">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.Imaging.Processing.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.Imaging.SVG">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.Imaging.SVG.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XDoc.PDF">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.XDoc.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XImage.Raster">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.XImage.Raster.dll</HintPath>
+    </Reference>
+    <Reference Include="RasterEdge.XImage.Raster.Core">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\New folder\RasterEdge.DocImageSDK10.8.10(release)\Bin\DotNet Framework4.0\x86\RasterEdge.XImage.Raster.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>C:\Users\lenovo\Desktop\webcam\WebCam_Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="webcamcapturing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="webcamcapturing.Designer.cs">
+      <DependentUpon>webcamcapturing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="webcamcapturing.resx">
+      <DependentUpon>webcamcapturing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="UploadedFiles\newfile.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
